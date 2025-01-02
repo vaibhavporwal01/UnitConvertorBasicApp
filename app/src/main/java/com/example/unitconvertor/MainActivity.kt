@@ -134,7 +134,7 @@ fun UnitConvertor(modifier: Modifier) {
                     Text(outputUnit)
                     Icon(Icons.Default.ArrowDropDown, contentDescription = "Arrow Down")
                 }
-                DropdownMenu(expanded = outputExpanded, onDismissRequest = {inputExpanded = false}) {
+                DropdownMenu(expanded = outputExpanded, onDismissRequest = {outputExpanded = false}) {
                     DropdownMenuItem(
                         text = {Text("Centimeters")},
                         onClick = {
